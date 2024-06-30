@@ -11,6 +11,9 @@
 .bg-3{
     background-color: #323544;
 }
+.bg-foot{
+    background-color: #262936;
+}
 ul{
     list-style: none;
 }
@@ -52,5 +55,30 @@ input{
     border: none;
     background: #009ad8;
     border-radius: 30px;
+    color: white;
+}
+#subBtn{
+    right: 15px;
+    bottom: 56px;
+    padding: 6px 40px;
+    border: none;
+    background: #009ad8;
+    border-radius: 30px;
+    color: white;
+}
+.icon{
+    color: #009ad8;
+    background-color: #1e202b;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.icon:hover{
+    background-color: #009ad8;
     color: white;
 }
