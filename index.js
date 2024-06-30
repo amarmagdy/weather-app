@@ -47,8 +47,11 @@ function displatNextData(data){
 }
 async function startApp(city="cairo"){
     var weatherData= await fetchData(city);
-    displayTodayData(weatherData);
-    displatNextData(weatherData);
+    if(!weatherData.error){
+        displayTodayData(weatherData);
+        displatNextData(weatherData);
+    }
+    
 }
 startApp();
 searchInput.addEventListener("input", function(){
