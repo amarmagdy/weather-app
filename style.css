@@ -1,0 +1,56 @@
+
+.ms-1111{
+    margin-left: 400px;
+}
+.bg-main{
+    background-color: #1e202b;
+}
+.bg-sec{
+    background-color: #2d303d;
+}
+.bg-3{
+    background-color: #323544;
+}
+ul{
+    list-style: none;
+}
+ul a{
+    text-decoration: none;
+    color: white;
+    transition: all 0.1s;
+}
+.home{
+    color: #009ad8;
+    border: 3px solid;
+    border-color: #009ad8;
+    border-radius: 16px;
+    padding: 5px 20px;
+}
+ul a:hover{
+    color: #009ad8;
+    border: 3px solid;
+    border-color: #009ad8;
+    border-radius: 16px;
+    padding: 5px 20px;
+}
+input{
+    
+    padding: 10px;
+    border: solid #1e202b;
+    border-radius: 20px;
+    width: 100%;
+    margin-block: 50px;
+}
+#home{
+    background-image: url("https://routeweather.netlify.app/images/banner.png");
+    background-repeat: no-repeat;
+}
+#findBtn{
+    right: 10px;
+    bottom: 55px;
+    padding: 6px 40px;
+    border: none;
+    background: #009ad8;
+    border-radius: 30px;
+    color: white;
+}

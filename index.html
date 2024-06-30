@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="./assets/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./assets/fontawesome-free-6.5.2-web/css/all.min.css">
+    <link rel="icon" href="./assets/bookmark.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body class="bg-main">
+    <section id="nav" class="py-5">
+        <div class="container d-flex">
+            <div class="left">
+                <div class="logo d-flex">
+                    <div class="img  text-end pt-2">
+                        <img src="https://routeweather.netlify.app/images/logo@2x.png" alt="cloud" class="w-50">
+                    </div>
+                    <div class="logo-words text-white ps-2">
+                        <p>Weather</p>
+                        <span>tagline goes here</span>
+                    </div>
+                </div>
+            </div>
+            <div class="right text-white ms-1111">
+                <ul class="d-flex gap-5">
+                    <li>
+                        <a href="" class="home">Home</a>
+                    </li>
+                    <li>
+                        <a href="">News</a>
+                    </li>
+                    <li>
+                        <a href="">Live cameras</a>
+                    </li>
+                    <li>
+                        <a href="">Photos</a>
+                    </li>
+                    <li>
+                        <a href="">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="home">
+        <div class="container">
+            <div class="input position-relative mb-5">
+                <input type="text" placeholder="Find your location..." class="bg-main text-white" id="search">
+                <button id="findBtn" class="position-absolute">Find</button>
+            </div>
+            <div class="row">
+                <div class="col-md-4 item  bg-main  rounded-start">
+                    <div class="d-flex justify-content-between py-2 px-3 text-light">
+                        <p id="todayDateName" class="my-auto">Sunday</p>
+                        <span>
+                            <span id="todayDateNumber" class="my-auto">30</span>
+                            <span id="todayDateMonth" class="my-auto">may</span>
+                        </span>
+                    </div>
+                    <div class="item-content text-start px-3 py-3 pt-5 text-light" id="today">
+                        <p id="todayLocation" class="fs-4">Cairo</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="fs-1 fw-bolder">
+                                <span id="todayTemp">20</span>
+                                <span><sup>o</sup> C</span>
+                            </span>
+                            <img id="todayCondImg" src="https://cdn.weatherapi.com/weather/64x64/night/113.png">
+                        </div>
+                        <p id="todayCondText" class="fs-6 text-primary">Sunny</p>
+                    </div> 
+                    <div class="item-footer d-flex text-light p-3">
+                        <div class="d-flex me-3">
+                            <img src="https://routeweather.netlify.app/images/icon-umberella.png" class="me-2 img-fluid">
+                            <p id="humidity">20</p>
+                        </div>
+                        <div class="d-flex me-3">
+                            <img src="https://routeweather.netlify.app/images/icon-wind.png" class="me-2 img-fluid">
+                            <p id="wind">20 km/h</p>
+                        </div>
+                        <div class="d-flex me-3">
+                            <img src="https://routeweather.netlify.app/images/icon-compass.png" class="me-2 img-fluid">
+                            <p id="windDirection">NNE</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 bg-sec">
+                    <div class="py-2 text-center text-light" id="tomorrowDate">
+                        <p class="next-day-name my-auto">Friday</p>
+                    </div>
+                    <div class="item-content text-light p-3 pt-5 text-center" id="tomorrow">
+                        <img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" class="next-cond-img">
+                        <h3>
+                            <span class="next-max-temp">20</span>
+                            <span><sup>o</sup> C</span>
+                        </h3>
+                        <h5 class="text-light">
+                            <span class="next-min-temp">15</span>
+                            <span><sup>o</sup> C</span>
+                        </h5>
+                        <p class="fs-6 text-primary next-cond-text">Sunny</p>
+                    </div>
+
+                </div>
+                <div class="col-md-4 bg-main rounded-end bg-3">
+                    <div class="py-2 text-center text-light" id="tomorrowDate">
+                        <p class="next-day-name my-auto">Friday</p>
+                    </div>
+                    <div class="item-content text-light p-3 pt-5 text-center" id="tomorrow">
+                        <img src="https://cdn.weatherapi.com/weather/64x64/day/113.png" class="next-cond-img">
+                        <h3>
+                            <span class="next-max-temp">20</span>
+                            <span><sup>o</sup> C</span>
+                        </h3>
+                        <h5 class="text-light">
+                            <span class="next-min-temp">15</span>
+                            <span><sup>o</sup> C</span>
+                        </h5>
+                        <p class="fs-6 text-primary next-cond-text">Sunny</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./index.js"></script>
+</body>
